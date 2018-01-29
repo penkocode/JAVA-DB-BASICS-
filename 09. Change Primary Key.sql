@@ -1,6 +1,0 @@
-ALTER TABLE users
-MODIFY COLUMN id INT;
-ALTER TABLE users
-DROP PRIMARY KEY;
-ALTER TABLE users
-ADD PRIMARY KEY pk_users (id,username);
