@@ -1,0 +1,1 @@
+SELECT town_id,name FROM towns WHERE name LIKE 'M%' OR name like 'K%' OR name like 'B%' OR name like 'E%' ORDER BY name;
