@@ -1,1 +1,0 @@
-SELECT name FROM towns WHERE char_length(name)>= 5 AND char_length(name)<=6 ORDER BY name ASC;
