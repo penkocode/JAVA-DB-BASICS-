@@ -1,0 +1,13 @@
+SELECT 
+    e.employee_id, e.first_name, p.name AS 'project_name'
+FROM
+    employees AS e
+        JOIN
+    employees_projects AS ep ON ep.employee_id = e.employee_id
+        JOIN
+    projects AS p ON p.project_id = ep.project_id
+WHERE
+    p.start_date >= '2002-08-14'
+        AND p.end_date IS NULL
+ORDER BY e.first_name ASC, p.name ASC
+LIMIT 5;
